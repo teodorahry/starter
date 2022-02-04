@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Photo Gallery</title>   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-sheet.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <style>
+            .container > * {
+            }
+            .container {
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                grid-auto-rows:minmax(60px, auto);
+                max-width:1200px;
+                position:relative;
+                margin:50px auto 0 auto;
+                z-index:1;
+            }
+            .local-favorites {
+                grid-column:1/4;
+                text-align:left;
+                padding:60px 0 5px 40px;
+            }
+            .blurb {
+                grid-column:1/4;
+                text-align:left;
+                padding-left:40px;
+            }
+            .thumbnail1 {
+                grid-column:1/2;
+                padding:40px 10px 30px 60px;
+            
+            }
+            .thumbnail2 {
+                grid-column:2/3;
+                padding:40px 20px 30px 35px;
+
+            }
+            .thumbnail3 {
+                grid-column:3/4;
+                padding:40px 60px 33px 10px;
+           
+            }
+            .thumbnail4 {
+                grid-column:1/2;
+                padding:30px 10px 73px 60px;
+            }
+            .thumbnail5 {
+                grid-column:2/3;
+                padding:30px 20px 73px 35px;
+            }
+            .thumbnail6 {
+                grid-column:3/4;
+                padding:30px 60px 73px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bar">&nbsp;</div>
+        <div class="wrapper">
+            <nav>
+                <img src="images/logo.png" style="height:60px" alt="Harrionburg Tourism, the friendly city logo.">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="jmu.html">JMU</a></div>
+                <div><a href="downtown.html">Downtown</a></div>
+                <div><a href="links.html">Local Shops &amp; Restaurants</a></div>
+                <div><a href="photos.html">Photo Gallery</a></div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="local-favorites"><h1>Discover local favorites...</h1></div>
+            <div class="thumbnail1">
+                <a href="images/slide1.jpg"><img src="images/slide1-small.jpg" alt="A landscape view of mountains, a forest, and a river from an elevated point."></a>
+                <h3><a href="https://www.fs.usda.gov/gwj">George Washington National Park</a></h3>
+                <p>The George Washington National Park expands through Virginia, West Virginia, and Kentucky. The North River Ranger District is situated just west of Harrisonburg. Be sure to check out all of the trails and natural wildlife.</p>
+            </div>
+            <div class="thumbnail2">
+                <a href="images/slide2.jpg"><img src="images/slide2-small.jpg" style="height:220px" alt="A side view of the entire Rockingham County courthouse."></a>
+                <h3><a href="https://www.rockinghamcountyva.gov/351/Historical-Courthouse-Information">Rockingham County Courthouse</a></h3>
+                <p>Come explore this historical site located in the heart of downtown Harrisonburg. This was the site where Gen. Thomas J. “Stonewall” Jackson imprisoned about 2,000 Union soldiers after the first Battle of Winchester on May 25, 1862.</p>
+            </div>
+            <div class="thumbnail3">
+                <a href="images/slide3.jpg"><img src="images/slide3-small.jpg" alt="Different green potted plants on a table with plant tags."></a>
+                <h3><a href="https://www.jmu.edu/arboretum/">Edith J. Carrier Arboretum</a></h3>
+                <p>Experience the woodland trails of the local arboretum, landscaped with native plants and botanical gardens. You can stroll through the gardens, attend an event, or just relax on the lawn with some company.</p>
+            </div>
+            <div class="thumbnail4">
+                <a href="images/slide4.jpg"><img src="images/slide4-small.jpg" alt="A close-up view of two people sitting at a table outside with two beer glasses between them."></a>
+                <h3><a href="https://www.palefirebrewing.com/">Pale Fire Brewery</a></h3>
+                <p>At the Pale Fire brewery, you can sample a variety of locally-brewed beers, most of which are made fresh on site. The new tasting room features some of the best craft beer around and opens up to a large patio.</p>
+            </div>
+            <div class="thumbnail5">
+                <a href="images/slide5.jpg"><img src="images/slide5-small.jpg" style="height:220px" alt="A hand holding an ice cream cone with vanilla ice cream inside."></a>
+                <h3><a href="http://www.bellalunawoodfired.com/bella-gelato">Bella Gelato &amp; Pastries</a></h3>
+                <p>If you are looking to satisfy your sweet tooth, this is the place to go! With a choice between homemade bread, local coffee roasts, a pastry case full of treats, and award-winning gelato, it will be tough to pick just one thing.</p>
+            </div>
+            <div class="thumbnail6">
+                <a href="images/slide6.jpg"><img src="images/slide6-small.jpg" alt="A woman making coffee at an espresso machine, while a man and a women drink coffee and talk to her at the coffee bar."></a>
+                <h3><a href="https://www.broadporchcoffee.com/">Broad Poarch Coffee Co.</a></h3>
+                <p>Need some caffeine? Head to Broad Porch Coffee, where you will be sure to find all the locals. The small batch coffee shop is located in the Agora Downtown Market, and offers brewed coffee and espresso drinks.</p>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-left">
+                <h4>About Harrisonburg<br></h4>
+                <p>Located between the Blue Ridge and Allegheny Mountain ranges in the western part of Virginia, Harrisonburg is a hidden gem. With Shenandoah Valley at its doorstep, you do not have to look far to find breathtaking views and activities to do in nature. Visitors are welcomed by a diverse and vibrant downtown as well.<br></p>
+                <p>&#169; Harrisonburg Tourism. All rights reserved.</p>
+            </div>
+            <div class="footer-middle">
+                <h4>Contact Us</h4>
+                <p>Harrisonburg Tourism<br>
+                   212 S Main St.<br>
+                   Harrisonburg, VA 22801<br></p>
+                <p><a href="https://www.visitharrisonburgva.com/">(540) 432-8935</a><br>
+                   <a href = "mailto:tourism@harrisonburgva.gov">tourism@harrisonburgva.gov</a></p>
+            </div>
+            <div class="footer-right">
+                <img src="images/svlogo.png" style="height:100px" alt="Shenandoah valley logo.">
+                <img src="images/virginia.png" style="height:100px" alt="White Virginia is for lovers logo.">
+            </div>
+        </div>
+    </body>
+</html>
